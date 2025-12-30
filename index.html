@@ -15,11 +15,9 @@
         .section-title { font-size: 1.15em; font-weight: bold; color: #e67e22; margin-top: 35px; border-left: 4px solid #e67e22; padding-left: 10px; }
         .guide-box { background: #fffcf0; padding: 20px; border-radius: 12px; border: 1px solid #ffeaa7; margin-top: 10px; font-size: 0.95em; }
         
-        /* QR 섹션 */
         #qr-container { display: none; text-align: center; margin-top: 30px; padding: 30px; border: 2px solid #2c3e50; border-radius: 20px; background-color: #fff; }
         .qr-image { width: 250px; height: 250px; display: block; margin: 15px auto; border: 1px solid #eee; }
         
-        /* 버튼 스타일 */
         .show-qr-btn { display: block; width: 100%; background: #2c3e50; color: white; text-align: center; padding: 20px 0; border-radius: 12px; border: none; font-weight: bold; font-size: 1.15em; cursor: pointer; margin-top: 40px; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .show-qr-btn:hover { background: #34495e; transform: translateY(-2px); }
         
@@ -45,31 +43,31 @@
         <div class="section-title">1. 검사 실시 전 유의 사항</div>
         <div class="guide-box">
             <ul>
-                <li>정답이 없는 인식 조사임을 강조하여 솔직하게 응답할 수 있는 허용적 분위기를 조성해 주세요.</li>
+                <li>본 조사는 정답이 없는 인식 조사임을 강조하여 학생들이 솔직하게 응답할 수 있는 허용적인 분위기를 조성해 주십시오. [cite: 8]</li>
             </ul>
         </div>
 
         <div class="section-title">2. 학생 질의 대응 가이드</div>
         <div class="guide-box">
-            <p><strong>Q: "선생님, 롤모델이 뭐예요?"</strong></p>
+            <p><strong>상황: 학생들이 설문지 표지를 보고 "선생님, 롤모델이 뭐예요?"라고 질문하는 경우</strong> </p>
             <ul>
-                <li><span class="important">★ 교사는 롤모델의 정의를 직접 설명하지 않습니다.</span></li>
-                <li><strong>표준 답변:</strong> "표지를 넘겨서 1번과 2번 문항을 차례대로 읽어보면 알 수 있을 거야. 질문을 천천히 읽고 떠오르는 대로 적어보렴."</li>
-                <li><strong>이유:</strong> 특정 범주로 제한되는 프레이밍 효과를 방지하기 위함입니다.</li>
+                <li><span class="important">★★ 대응 원칙: 교사는 롤모델의 정의를 직접 설명하지 않습니다. ★★</span> </li>
+                <li><strong>표준 답변:</strong> "표지를 넘겨서 1번과 2번 문항을 차례대로 읽어보면 알 수 있을 거야. 질문을 천천히 읽고 떠오르는 대로 적어보렴." [cite: 11, 12]</li>
+                <li><strong>이유:</strong> 교사가 예시를 들거나 정의를 내릴 경우(예: "훌륭한 위인 같은 사람이야"), 학생의 응답이 특정 범주로 제한되는 <strong>프레이밍 효과</strong>가 발생할 수 있기 때문입니다. </li>
             </ul>
         </div>
 
         <div class="section-title">3. 문항별 지도 지침</div>
         <div class="guide-box">
-            <strong>[1번 문항]</strong>
+            <strong>[1번 문항] "선생님, 친구들 사이에 누가 인기 있는지 정말 모르겠어요."</strong> [cite: 16]
             <ul>
-                <li>특정 인물이 아니어도 유튜브 채널, 게임, 운동선수 그룹 등도 가능함을 안내해 주세요.</li>
-                <li>정말 모를 경우 '모름'이라 적고 2번으로 넘어가도록 지도합니다.</li>
+                <li>"꼭 한 명의 사람 이름이 아니어도 괜찮아. 요즘 친구들이 많이 보는 유튜브 채널이나 게임, 혹은 운동선수 그룹 같은 것도 좋아. 떠오르는 게 있니?"라고 안내해 주세요. [cite: 17]</li>
+                <li>그래도 없다고 하는 경우, 1번은 '모름'이라고 적고 바로 2번 문제로 넘어가도록 지도합니다. [cite: 19]</li>
             </ul>
-            <strong>[2번 및 2-1번 문항]</strong>
+            <strong>[2번 및 2-1번 문항] (박스 안 질문)</strong> [cite: 20]
             <ul>
-                <li>2번과 2-1번은 세트 문항이며 이유를 상세히 적도록 안내합니다.</li>
-                <li>닮고 싶은 인물이 없으면 '없음'으로 기재합니다.</li>
+                <li>2번과 2-1번 문항은 하나의 세트입니다. 2번에 적은 인물에 대해 2-1번의 이유를 상세히 적도록 안내합니다. [cite: 21, 22]</li>
+                <li>닮고 싶은 인물을 모르겠다고 하는 경우, 2번에 '없음'이나 '모름'으로 적고 2-1번은 작성하지 않습니다. [cite: 23]</li>
             </ul>
         </div>
 
@@ -92,7 +90,6 @@
             var qr = document.getElementById("qr-container");
             if (qr.style.display === "none" || qr.style.display === "") {
                 qr.style.display = "block";
-                // 버튼 클릭 시 QR 영역으로 부드럽게 스크롤
                 qr.scrollIntoView({ behavior: 'smooth' });
             } else {
                 qr.style.display = "none";
