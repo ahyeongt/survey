@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>연구 설문 참여 및 실시 안내</title>
+    <title>초등학생의 롤모델에 관한 연구 설문 안내</title>
     <style>
         body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; max-width: 700px; margin: 0 auto; padding: 20px; background-color: #f0f2f5; }
         .card { background: white; padding: 40px 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
         .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #2c3e50; padding-bottom: 20px; }
-        .affiliation { color: #666; font-size: 0.95em; margin-bottom: 5px; }
-        .name { font-size: 1.2em; font-weight: bold; color: #2c3e50; }
-        h2 { color: #2c3e50; font-size: 1.5em; margin-top: 15px; word-break: keep-all; }
-        .intro-box { background: #eef2f7; padding: 20px; border-radius: 12px; margin: 20px 0; font-size: 0.95em; border-left: 5px solid #2c3e50; }
-        .section-title { font-size: 1.2em; font-weight: bold; color: #e67e22; margin-top: 30px; border-left: 4px solid #e67e22; padding-left: 10px; }
+        h2 { color: #2c3e50; font-size: 1.6em; margin-bottom: 10px; word-break: keep-all; }
+        .affiliation { color: #555; font-size: 1.05em; font-weight: 500; }
+        
+        .intro-box { background: #eef2f7; padding: 25px; border-radius: 12px; margin: 25px 0; font-size: 0.98em; border-left: 5px solid #2c3e50; }
+        .section-title { font-size: 1.15em; font-weight: bold; color: #e67e22; margin-top: 35px; border-left: 4px solid #e67e22; padding-left: 10px; }
         .guide-box { background: #fffcf0; padding: 20px; border-radius: 12px; border: 1px solid #ffeaa7; margin-top: 10px; font-size: 0.95em; }
-        .qr-section { text-align: center; margin: 40px 0; padding: 30px; border: 2px dashed #cbd5e0; border-radius: 20px; background-color: #fff; }
-        .qr-image { width: 220px; height: 220px; display: block; margin: 10px auto; }
+        
+        /* QR 섹션 */
+        #qr-container { display: none; text-align: center; margin-top: 30px; padding: 30px; border: 2px solid #2c3e50; border-radius: 20px; background-color: #fff; }
+        .qr-image { width: 250px; height: 250px; display: block; margin: 15px auto; border: 1px solid #eee; }
+        
+        /* 버튼 스타일 */
+        .show-qr-btn { display: block; width: 100%; background: #2c3e50; color: white; text-align: center; padding: 20px 0; border-radius: 12px; border: none; font-weight: bold; font-size: 1.15em; cursor: pointer; margin-top: 40px; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .show-qr-btn:hover { background: #34495e; transform: translateY(-2px); }
+        
         .important { color: #d63031; font-weight: bold; }
         ul { padding-left: 20px; }
         li { margin-bottom: 8px; }
@@ -24,21 +31,21 @@
 <body>
     <div class="card">
         <div class="header">
-            <p class="affiliation">한국교원대학교 교육대학원</p>
-            <p class="name">문아영 드림</p>
-            <h2>초등학생의 롤모델에 관한 연구 설문 안내</h2>
+            <h2>초등학생의 롤모델에 관한 연구 설문</h2>
+            <p class="affiliation">한국교원대학교 교육대학원 석사과정 문아영</p>
         </div>
 
-        <p class="intro-box">
-            선생님, 안녕하세요. 학기말 바쁜 업무 중에도 연구에 참여해 주셔서 진심으로 감사드립니다.<br>
-            아래의 <strong>[검사 실시 지침]</strong>을 참고하시어 설문을 진행해 주시면 연구에 큰 도움이 되겠습니다.
-        </p>
+        <div class="intro-box">
+            선생님, 안녕하세요. <br>
+            학기말 바쁜 교육 활동 중에 연구에 도움을 주셔서 진심으로 감사드립니다.<br><br>
+            학생들에게 QR 코드를 공개하기 전, 아래의 지침을 먼저 숙지해 주시면 연구에 <strong>큰 도움이 되겠습니다.</strong><br><br>
+            <strong>문아영 드림</strong>
+        </div>
 
         <div class="section-title">1. 검사 실시 전 유의 사항</div>
         <div class="guide-box">
             <ul>
-                <li>본 조사는 정답이 없는 인식 조사임을 강조해 주세요.</li>
-                <li>학생들이 솔직하게 응답할 수 있도록 <strong>허용적인 분위기</strong>를 조성해 주시기 바랍니다.</li>
+                <li>정답이 없는 인식 조사임을 강조하여 솔직하게 응답할 수 있는 허용적 분위기를 조성해 주세요.</li>
             </ul>
         </div>
 
@@ -48,33 +55,50 @@
             <ul>
                 <li><span class="important">★ 교사는 롤모델의 정의를 직접 설명하지 않습니다.</span></li>
                 <li><strong>표준 답변:</strong> "표지를 넘겨서 1번과 2번 문항을 차례대로 읽어보면 알 수 있을 거야. 질문을 천천히 읽고 떠오르는 대로 적어보렴."</li>
-                <li><strong>이유:</strong> 특정 범주(예: 위인)로 제한되는 프레이밍 효과 방지 목적입니다.</li>
+                <li><strong>이유:</strong> 특정 범주로 제한되는 프레이밍 효과를 방지하기 위함입니다.</li>
             </ul>
         </div>
 
         <div class="section-title">3. 문항별 지도 지침</div>
         <div class="guide-box">
-            <strong>[1번 문항] 인기 있는 대상을 모를 때</strong>
+            <strong>[1번 문항]</strong>
             <ul>
                 <li>특정 인물이 아니어도 유튜브 채널, 게임, 운동선수 그룹 등도 가능함을 안내해 주세요.</li>
-                <li>정말 생각나지 않는다면 '모름'이라 적고 2번으로 넘어가도록 지도합니다.</li>
+                <li>정말 모를 경우 '모름'이라 적고 2번으로 넘어가도록 지도합니다.</li>
             </ul>
-            <strong>[2번 및 2-1번 문항] 닮고 싶은 인물</strong>
+            <strong>[2번 및 2-1번 문항]</strong>
             <ul>
-                <li>2번과 2-1번은 세트 문항이므로 이유를 상세히 적도록 안내해 주세요.</li>
-                <li>닮고 싶은 인물이 없으면 '없음'으로 적고 2-1번은 비워둡니다.</li>
+                <li>2번과 2-1번은 세트 문항이며 이유를 상세히 적도록 안내합니다.</li>
+                <li>닮고 싶은 인물이 없으면 '없음'으로 기재합니다.</li>
             </ul>
         </div>
 
-        <div class="qr-section">
-            <p style="font-size: 1.1em; font-weight: bold; color: #2c3e50;">[설문 참여 QR 코드]</p>
+        <button class="show-qr-btn" onclick="toggleQR()">학생 공개용 QR 코드 보기</button>
+
+        <div id="qr-container">
+            <p style="font-size: 1.2em; font-weight: bold; color: #2c3e50;">[학생 참여용 QR 코드]</p>
             <img src="qr.png" alt="설문 QR코드" class="qr-image">
-            <p style="font-size: 0.9em; color: #7f8c8d; margin-top: 15px;">스마트 기기 카메라로 위 코드를 스캔하여<br>설문을 시작해 주세요.</p>
+            <p style="font-size: 0.95em; color: #7f8c8d; margin-top: 15px;">스마트 기기 카메라로 위 코드를 스캔해 주세요.</p>
+            <button onclick="toggleQR()" style="margin-top: 20px; background: none; border: 1px solid #ccc; padding: 5px 10px; cursor: pointer; border-radius: 5px; color: #666;">지침 다시 보기 (QR 숨기기)</button>
         </div>
 
-        <p style="text-align: center; color: #95a5a6; font-size: 0.8em; margin-top: 40px;">
+        <p style="text-align: center; color: #95a5a6; font-size: 0.8em; margin-top: 50px;">
             © 2025 Moon Ah-young. Korea National University of Education.
         </p>
     </div>
+
+    <script>
+        function toggleQR() {
+            var qr = document.getElementById("qr-container");
+            if (qr.style.display === "none" || qr.style.display === "") {
+                qr.style.display = "block";
+                // 버튼 클릭 시 QR 영역으로 부드럽게 스크롤
+                qr.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                qr.style.display = "none";
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>
