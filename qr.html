@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 참여용 QR 코드</title>
+    <style>
+        body { font-family: 'Pretendard', sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background-color: #2c3e50; color: white; text-align: center; }
+        .container { padding: 20px; }
+        h1 { font-size: 1.8em; margin-bottom: 30px; }
+        .qr-card { background: white; padding: 30px; border-radius: 20px; display: inline-block; margin-bottom: 30px; }
+        .qr-image { width: 300px; height: 300px; display: block; }
+        .back-btn { display: inline-block; color: #bdc3c7; text-decoration: none; font-size: 0.9em; border: 1px solid #7f8c8d; padding: 10px 20px; border-radius: 5px; }
+        .back-btn:hover { background: rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>[학생 참여용 QR 코드]</h1>
+        
+        <div class="qr-card">
+            <img src="qr.png" alt="설문 QR코드" class="qr-image">
+        </div>
+        
+        <p style="margin-bottom: 40px; opacity: 0.8;">스마트 기기의 카메라로 스캔하여<br>설문을 시작해 주세요.</p>
+        
+        <a href="index.html" class="back-btn">← 지침 다시 보기 (이전 페이지)</a>
+    </div>
+</body>
+</html>
